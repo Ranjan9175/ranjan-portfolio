@@ -1,0 +1,210 @@
+/* Resetting */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Common Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  background-color: #DDDDDD;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2A4759;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #9ba6b7;
+}
+
+
+/* main Section */
+.profile {
+  border-radius: 100%;
+  border: 4px solid #374151;
+  transition: transform 0.4s ease-in-out;
+}
+
+.profile:hover {
+  transform: scale(1.1);
+}
+
+.main-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1F2937;
+}
+
+.pdf-buttons {
+  margin: 30px;
+}
+
+.pdf-buttons a {
+  text-decoration: none;
+  background-color: #2A4759;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  gap: 9px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.pdf-buttons a:hover {
+  background-color: #374151;
+}
+
+.download-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2A4759;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Headings */
+.heading {
+  margin: 20px;
+  color: #1F2937;
+  text-align: center;
+}
+
+.heading span {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+
+/* About & Project Section */
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 20px 35px;
+  margin-bottom: 50px;
+}
+
+.info {
+  background-color: #374151;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  color: #ffffff;
+}
+
+.skills {
+  list-style: none;
+}
+
+.project-info {
+  margin-left: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  background-color: #374151;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea,
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  resize: none;
+  font-family: inherit;
+}
+
+button {
+  background-color: #2A4759;
+  color: #f9fafb;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #334155;
+}
+
+/* Wrapper for All Pages */
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Responsive for Small Screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .nav-links {
+    margin: 10px;
+    gap: 50px;
+  }
+}
